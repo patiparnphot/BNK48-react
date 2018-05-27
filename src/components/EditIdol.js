@@ -1,0 +1,171 @@
+import React from 'react';
+import { Link } from 'react-router';
+import NotFoundPage from './NotFoundPage';
+
+export default class EditIdol extends React.Component {
+  render() {
+    return (
+        <div class="row">
+            <h1 style="text-align: center">Edit Your Idol</h1>
+            <div style="width: 30%; margin: 25px auto;">
+                <div class="form-group">
+                    <label for="file">Upload</label>
+                    <input type="file" name="file" id="file"accept="image/*" (change)="preUpload($event)" #fileInput>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-success" (click)="upload()" [disabled]="loading || (!file)">
+                        Upload Image <p *ngIf="loading">loading...</p>
+                    </button>
+                </div>
+                <p>
+                    please copy this paste on Image input below if you want to chage image
+                    {{ newsrc }}
+                </p>
+                <br>
+                <br>
+                <img *ngIf="file" src="{{ file }}" style="width: 100%">
+                <br>
+                <br>
+                <form (ngSubmit)="updateIdol()" #updateidolForm="ngForm" [ngFormOptions]="{ updateOn: 'blur' }" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" class="form-control" id="firstname" [(ngModel)]="idol.firstname" [ngModelOptions]="{ updateOn: 'change' }"
+                        name="firstname" placeholder="Firstname" #firstname="ngModel" required>
+                        <div [hidden]="firstname.valid || firstname.pristine" class="alert alert-danger">
+                            Firstname is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" class="form-control" id="lastname" [(ngModel)]="idol.lastname" [ngModelOptions]="{ updateOn: 'change' }"
+                        name="lastname" placeholder="Lastname" #lastname="ngModel" required>
+                        <div [hidden]="lastname.valid || lastname.pristine" class="alert alert-danger">
+                            Lastname is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nickname">Nickname</label>
+                        <input type="text" class="form-control" id="nickname" [(ngModel)]="idol.nickname" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="nickname" placeholder="Nickname" #nickname="ngModel" required>
+                        <div [hidden]="nickname.valid || nickname.pristine" class="alert alert-danger">
+                            Nickname is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="aka">AKA</label>
+                        <input type="text" class="form-control" id="aka" [(ngModel)]="idol.aka" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="aka" placeholder="AKA" #aka="ngModel" required>
+                        <div [hidden]="aka.valid || aka.pristine" class="alert alert-danger">
+                            AKA is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Birthday</label>
+                        <input type="text" class="form-control" id="birthday" [(ngModel)]="idol.birthday" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="birthday" placeholder="Birthday" #birthday="ngModel" required>
+                        <div [hidden]="birthday.valid || birthday.pristine" class="alert alert-danger">
+                            Birthday is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Height</label>
+                        <input type="text" class="form-control" id="height" [(ngModel)]="idol.height" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="height" placeholder="Height" #height="ngModel" required>
+                        <div [hidden]="height.valid || height.pristine" class="alert alert-danger">
+                            Height is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bloodgroup">Blood group</label>
+                        <input type="text" class="form-control" id="bloodgroup" [(ngModel)]="idol.bloodgroup" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="bloodgroup" placeholder="BloodGroup" #bloodgroup="ngModel" required>
+                        <div [hidden]="bloodgroup.valid || bloodgroup.pristine" class="alert alert-danger">
+                            Blood group is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" [(ngModel)]="idol.address" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="address" placeholder="Address" #address="ngModel" required>
+                        <div [hidden]="address.valid || address.pristine" class="alert alert-danger">
+                            Address is required
+                       </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="favcolor">Favorite color</label>
+                        <input type="text" class="form-control" id="favcolor" [(ngModel)]="idol.favcolor" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="favcolor" placeholder="FavColor" #favcolor="ngModel" required>
+                        <div [hidden]="favcolor.valid || favcolor.pristine" class="alert alert-danger">
+                            Favorite color is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="favfood">Favorite food</label>
+                        <input type="text" class="form-control" id="favfood" [(ngModel)]="idol.favfood" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="favfood" placeholder="FavFood" #favfood="ngModel" required>
+                        <div [hidden]="favfood.valid || favfood.pristine" class="alert alert-danger">
+                            Favorite food is required
+                        </div>
+                    </div>
+                        <div class="form-group">
+                        <label for="hobby">Hobby</label>
+                        <input type="text" class="form-control" id="hobby" [(ngModel)]="idol.hobby" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="hobby" placeholder="Hobby" #hobby="ngModel" required>
+                        <div [hidden]="hobby.valid || hobby.pristine" class="alert alert-danger">
+                            Hobby is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lang">Language</label>
+                        <input type="text" class="form-control" id="lang" [(ngModel)]="idol.lang" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="language" placeholder="Language" #language="ngModel" required>
+                        <div [hidden]="language.valid || language.pristine" class="alert alert-danger">
+                            Language is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="university">Education: University</label>
+                        <input type="text" class="form-control" id="university" [(ngModel)]="idol.edu.university" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="university" placeholder="University" #university="ngModel" required>
+                        <div [hidden]="university.valid || university.pristine" class="alert alert-danger">
+                            University is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="highschool">Education: Highschool</label>
+                        <input type="text" class="form-control" id="highschool" [(ngModel)]="idol.edu.highschool" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="highschool" placeholder="Highschool" #highschool="ngModel" required>
+                        <div [hidden]="highschool.valid || highschool.pristine" class="alert alert-danger">
+                            Highschool is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" class="form-control" id="description" [(ngModel)]="idol.description" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="description" placeholder="Description" #description="ngModel" required>
+                        <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+                            Description is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Image</label>
+                        <input type="text" class="form-control" id="image" [(ngModel)]="idol.image" [ngModelOptions]="{ updateOn: 'change' }" 
+                        name="image" placeholder="Image src" #image="ngModel" required>
+                        <div [hidden]="image.valid || image.pristine" class="alert alert-danger">   
+                            Image is required
+                        </div>
+                    </div>
+                        <div class="form-group">
+                        <button type="submit" class="btn btn-success" [disabled]="(!updateidolForm.form.valid) || loading || (!idol.image)">
+                            Submit <p *ngIf="loading">loading...</p>
+                        </button>
+                        <button type="button" class="btn btn-success" (click)="goBack()" >
+                            GO BACK
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    );
+  }
+}

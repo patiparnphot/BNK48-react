@@ -1,0 +1,206 @@
+[21-Mar-2018 14:25:31 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/api/idols.php on line 2
+[21-Mar-2018 14:25:31 UTC] PHP Stack trace:
+[21-Mar-2018 14:25:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:25:31 UTC] PHP   2. PDO->__construct() /home/ubuntu/workspace/api/idols.php:2
+[21-Mar-2018 14:25:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/ubuntu/workspace/api/idols.php:2
+Stack trace:
+#0 /home/ubuntu/workspace/api/idols.php(2): PDO->__construct('mysql:host=http...', 'patiparn', 'bomgeo57')
+#1 {main}
+  thrown in /home/ubuntu/workspace/api/idols.php on line 2
+[21-Mar-2018 14:30:32 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/api/idols.php on line 2
+[21-Mar-2018 14:30:32 UTC] PHP Stack trace:
+[21-Mar-2018 14:30:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:30:32 UTC] PHP   2. PDO->__construct() /home/ubuntu/workspace/api/idols.php:2
+[21-Mar-2018 14:30:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/ubuntu/workspace/api/idols.php:2
+Stack trace:
+#0 /home/ubuntu/workspace/api/idols.php(2): PDO->__construct('mysql:host=http...', 'patiparn', 'bomgeo57')
+#1 {main}
+  thrown in /home/ubuntu/workspace/api/idols.php on line 2
+[21-Mar-2018 14:30:57 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/api/idols.php on line 2
+[21-Mar-2018 14:30:57 UTC] PHP Stack trace:
+[21-Mar-2018 14:30:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:30:57 UTC] PHP   2. PDO->__construct() /home/ubuntu/workspace/api/idols.php:2
+[21-Mar-2018 14:30:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/ubuntu/workspace/api/idols.php:2
+Stack trace:
+#0 /home/ubuntu/workspace/api/idols.php(2): PDO->__construct('mysql:host=http...', 'patiparn', 'bomgeo57')
+#1 {main}
+  thrown in /home/ubuntu/workspace/api/idols.php on line 2
+[21-Mar-2018 14:35:09 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/api/idols.php on line 2
+[21-Mar-2018 14:35:09 UTC] PHP Stack trace:
+[21-Mar-2018 14:35:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:35:09 UTC] PHP   2. PDO->__construct() /home/ubuntu/workspace/api/idols.php:2
+[21-Mar-2018 14:35:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/ubuntu/workspace/api/idols.php:2
+Stack trace:
+#0 /home/ubuntu/workspace/api/idols.php(2): PDO->__construct('mysql:host=http...', 'patiparn', 'bomgeo57')
+#1 {main}
+  thrown in /home/ubuntu/workspace/api/idols.php on line 2
+[21-Mar-2018 14:36:58 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 14:36:58 UTC] PHP Stack trace:
+[21-Mar-2018 14:36:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:41:43 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 14:41:43 UTC] PHP Stack trace:
+[21-Mar-2018 14:41:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:43:06 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 14:43:06 UTC] PHP Stack trace:
+[21-Mar-2018 14:43:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:46:25 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 14:46:25 UTC] PHP Stack trace:
+[21-Mar-2018 14:46:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:49:39 UTC] PHP Fatal error:  Call to a member function fetch_all() on a non-object in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 14:49:39 UTC] PHP Stack trace:
+[21-Mar-2018 14:49:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:50:33 UTC] PHP Fatal error:  Call to a member function fetch_all() on a non-object in /home/ubuntu/workspace/api/idols.php on line 5
+[21-Mar-2018 14:50:33 UTC] PHP Stack trace:
+[21-Mar-2018 14:50:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:52:23 UTC] PHP Fatal error:  Call to undefined method PDOStatement::fetch_all() in /home/ubuntu/workspace/api/idols.php on line 5
+[21-Mar-2018 14:52:23 UTC] PHP Stack trace:
+[21-Mar-2018 14:52:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:52:42 UTC] PHP Fatal error:  Call to undefined method PDOStatement::fetch_all() in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 14:52:42 UTC] PHP Stack trace:
+[21-Mar-2018 14:52:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:53:54 UTC] PHP Fatal error:  Call to undefined method PDOStatement::fetch_all() in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 14:53:54 UTC] PHP Stack trace:
+[21-Mar-2018 14:53:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:55:23 UTC] PHP Fatal error:  Call to undefined method PDOStatement::fetch_all() in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 14:55:23 UTC] PHP Stack trace:
+[21-Mar-2018 14:55:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:56:51 UTC] PHP Warning:  PDOStatement::fetch() expects parameter 1 to be long, string given in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 14:56:51 UTC] PHP Stack trace:
+[21-Mar-2018 14:56:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 14:56:51 UTC] PHP   2. PDOStatement->fetch() /home/ubuntu/workspace/api/idols.php:4
+[21-Mar-2018 15:01:18 UTC] PHP Warning:  PDOStatement::fetch() expects parameter 1 to be long, string given in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 15:01:18 UTC] PHP Stack trace:
+[21-Mar-2018 15:01:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 15:01:18 UTC] PHP   2. PDOStatement->fetch() /home/ubuntu/workspace/api/idols.php:4
+[21-Mar-2018 15:01:32 UTC] PHP Warning:  PDOStatement::fetch() expects parameter 1 to be long, string given in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 15:01:32 UTC] PHP Stack trace:
+[21-Mar-2018 15:01:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 15:01:32 UTC] PHP   2. PDOStatement->fetch() /home/ubuntu/workspace/api/idols.php:4
+[21-Mar-2018 15:01:57 UTC] PHP Warning:  PDOStatement::fetch() expects parameter 1 to be long, string given in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 15:01:57 UTC] PHP Stack trace:
+[21-Mar-2018 15:01:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 15:01:57 UTC] PHP   2. PDOStatement->fetch() /home/ubuntu/workspace/api/idols.php:4
+[21-Mar-2018 15:01:57 UTC] PHP Fatal error:  Call to a member function send() on a non-object in /home/ubuntu/workspace/api/idols.php on line 6
+[21-Mar-2018 15:01:57 UTC] PHP Stack trace:
+[21-Mar-2018 15:01:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 15:07:09 UTC] PHP Warning:  PDOStatement::fetch() expects parameter 1 to be long, string given in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 15:07:09 UTC] PHP Stack trace:
+[21-Mar-2018 15:07:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 15:07:09 UTC] PHP   2. PDOStatement->fetch() /home/ubuntu/workspace/api/idols.php:4
+[21-Mar-2018 15:12:13 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 15:12:13 UTC] PHP Stack trace:
+[21-Mar-2018 15:12:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 15:13:23 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 15:13:23 UTC] PHP Stack trace:
+[21-Mar-2018 15:13:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 15:16:22 UTC] PHP Fatal error:  Call to a member function fetchAll() on a non-object in /home/ubuntu/workspace/api/idols.php on line 4
+[21-Mar-2018 15:16:22 UTC] PHP Stack trace:
+[21-Mar-2018 15:16:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 15:29:24 UTC] PHP Fatal error:  Call to a member function send() on a non-object in /home/ubuntu/workspace/api/idols.php on line 8
+[21-Mar-2018 15:29:24 UTC] PHP Stack trace:
+[21-Mar-2018 15:29:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 15:41:57 UTC] PHP Warning:  log() expects parameter 1 to be double, array given in /home/ubuntu/workspace/api/idols.php on line 8
+[21-Mar-2018 15:41:57 UTC] PHP Stack trace:
+[21-Mar-2018 15:41:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 15:41:57 UTC] PHP   2. log() /home/ubuntu/workspace/api/idols.php:8
+[21-Mar-2018 15:42:43 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ubuntu/workspace/api/idols.php on line 8
+[21-Mar-2018 15:42:43 UTC] PHP Stack trace:
+[21-Mar-2018 15:42:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[21-Mar-2018 15:42:43 UTC] PHP   2. json_decode() /home/ubuntu/workspace/api/idols.php:8
+[21-Mar-2018 15:44:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'patiprn'@'localhost' (using password: YES)' in /home/ubuntu/workspace/api/idols.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/api/idols.php(5): PDO->__construct('mysql:host=0.0....', 'patiprn', 'bomgeo57', Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/api/idols.php on line 5
+[22-Mar-2018 05:24:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Connection refused' in /home/ubuntu/workspace/api/idols.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/api/idols.php(5): PDO->__construct('mysql:host=buku...', 'patiparn', 'bomgeo57', Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/api/idols.php on line 5
+[22-Mar-2018 05:25:50 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/api/idols.php on line 5
+[22-Mar-2018 05:25:50 UTC] PHP Stack trace:
+[22-Mar-2018 05:25:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[22-Mar-2018 05:25:50 UTC] PHP   2. PDO->__construct() /home/ubuntu/workspace/api/idols.php:5
+[22-Mar-2018 05:25:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/ubuntu/workspace/api/idols.php:5
+Stack trace:
+#0 /home/ubuntu/workspace/api/idols.php(5): PDO->__construct('mysql:host=http...', 'patiparn', 'bomgeo57', Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/api/idols.php on line 5
+[22-Mar-2018 05:26:19 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/api/idols.php on line 2
+[22-Mar-2018 05:26:19 UTC] PHP Stack trace:
+[22-Mar-2018 05:26:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[22-Mar-2018 05:26:19 UTC] PHP   2. PDO->__construct() /home/ubuntu/workspace/api/idols.php:2
+[22-Mar-2018 05:26:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/ubuntu/workspace/api/idols.php:2
+Stack trace:
+#0 /home/ubuntu/workspace/api/idols.php(2): PDO->__construct('mysql:host=http...', 'patiparn', 'bomgeo57')
+#1 {main}
+  thrown in /home/ubuntu/workspace/api/idols.php on line 2
+[22-Mar-2018 05:26:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Connection refused' in /home/ubuntu/workspace/api/idols.php:2
+Stack trace:
+#0 /home/ubuntu/workspace/api/idols.php(2): PDO->__construct('mysql:host=buku...', 'patiparn', 'bomgeo57')
+#1 {main}
+  thrown in /home/ubuntu/workspace/api/idols.php on line 2
+[22-Mar-2018 05:32:31 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/api/idols.php on line 2
+[22-Mar-2018 05:32:31 UTC] PHP Stack trace:
+[22-Mar-2018 05:32:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[22-Mar-2018 05:32:31 UTC] PHP   2. PDO->__construct() /home/ubuntu/workspace/api/idols.php:2
+[22-Mar-2018 05:32:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/ubuntu/workspace/api/idols.php:2
+Stack trace:
+#0 /home/ubuntu/workspace/api/idols.php(2): PDO->__construct('mysql:host=http...', 'patiparn', 'bomgeo57')
+#1 {main}
+  thrown in /home/ubuntu/workspace/api/idols.php on line 2
+[22-Mar-2018 05:39:53 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/api/idols.php on line 3
+[22-Mar-2018 05:39:53 UTC] PHP Stack trace:
+[22-Mar-2018 05:39:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[22-Mar-2018 05:39:53 UTC] PHP   2. PDO->__construct() /home/ubuntu/workspace/api/idols.php:3
+[22-Mar-2018 05:39:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/ubuntu/workspace/api/idols.php:3
+Stack trace:
+#0 /home/ubuntu/workspace/api/idols.php(3): PDO->__construct('mysql:host=$ser...', 'patiparn', 'bomgeo57')
+#1 {main}
+  thrown in /home/ubuntu/workspace/api/idols.php on line 3
+[26-Mar-2018 17:27:29 UTC] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/ubuntu/workspace/api/idols.php on line 14
+[26-Mar-2018 17:27:29 UTC] PHP Stack trace:
+[26-Mar-2018 17:27:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[26-Mar-2018 17:27:29 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/api/idols.php:14
+[26-Mar-2018 17:27:29 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/api/idols.php on line 16
+[26-Mar-2018 17:27:29 UTC] PHP Stack trace:
+[26-Mar-2018 17:27:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/idols.php:0
+[26-Mar-2018 17:27:29 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/api/idols.php:16
+[09-May-2018 09:59:46 UTC] PHP Warning:  mysqli::query(): Empty query in /home/ubuntu/workspace/api/deleteidol.php on line 17
+[09-May-2018 09:59:46 UTC] PHP Stack trace:
+[09-May-2018 09:59:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/deleteidol.php:0
+[09-May-2018 09:59:46 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/api/deleteidol.php:17
+[09-May-2018 10:27:48 UTC] PHP Warning:  mysqli::query(): Empty query in /home/ubuntu/workspace/api/deleteidol.php on line 17
+[09-May-2018 10:27:48 UTC] PHP Stack trace:
+[09-May-2018 10:27:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/deleteidol.php:0
+[09-May-2018 10:27:48 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/api/deleteidol.php:17
+[09-May-2018 10:31:47 UTC] PHP Warning:  mysqli::query(): Empty query in /home/ubuntu/workspace/api/deleteidol.php on line 17
+[09-May-2018 10:31:48 UTC] PHP Stack trace:
+[09-May-2018 10:31:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/deleteidol.php:0
+[09-May-2018 10:31:48 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/api/deleteidol.php:17
+[09-May-2018 10:37:39 UTC] PHP Warning:  mysqli::query(): Empty query in /home/ubuntu/workspace/api/deleteidol.php on line 17
+[09-May-2018 10:37:39 UTC] PHP Stack trace:
+[09-May-2018 10:37:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/deleteidol.php:0
+[09-May-2018 10:37:39 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/api/deleteidol.php:17
+[09-May-2018 10:38:01 UTC] PHP Warning:  mysqli::query(): Empty query in /home/ubuntu/workspace/api/deleteidol.php on line 17
+[09-May-2018 10:38:01 UTC] PHP Stack trace:
+[09-May-2018 10:38:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/deleteidol.php:0
+[09-May-2018 10:38:01 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/api/deleteidol.php:17
+[09-May-2018 10:40:57 UTC] PHP Warning:  mysqli::query(): Empty query in /home/ubuntu/workspace/api/deleteidol.php on line 17
+[09-May-2018 10:40:57 UTC] PHP Stack trace:
+[09-May-2018 10:40:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/deleteidol.php:0
+[09-May-2018 10:40:57 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/api/deleteidol.php:17
+[09-May-2018 10:43:02 UTC] PHP Warning:  mysqli::query(): Empty query in /home/ubuntu/workspace/api/deleteidol.php on line 17
+[09-May-2018 10:43:02 UTC] PHP Stack trace:
+[09-May-2018 10:43:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/deleteidol.php:0
+[09-May-2018 10:43:02 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/api/deleteidol.php:17
+[18-May-2018 11:45:14 UTC] PHP Warning:  trim() expects parameter 1 to be string, array given in /home/ubuntu/workspace/api/createidol.php on line 62
+[18-May-2018 11:45:14 UTC] PHP Stack trace:
+[18-May-2018 11:45:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/createidol.php:0
+[18-May-2018 11:45:14 UTC] PHP   2. trim() /home/ubuntu/workspace/api/createidol.php:62
+[19-May-2018 09:09:35 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/api/createidol.php on line 62
+[19-May-2018 09:09:35 UTC] PHP Stack trace:
+[19-May-2018 09:09:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/createidol.php:0
+[19-May-2018 09:10:28 UTC] PHP Warning:  Illegal string offset 'aka' in /home/ubuntu/workspace/api/createidol.php on line 62
+[19-May-2018 09:10:28 UTC] PHP Stack trace:
+[19-May-2018 09:10:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/createidol.php:0
