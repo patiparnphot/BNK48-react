@@ -2,7 +2,6 @@ import { connect } from 'react-redux';
 import { fetchIdols, fetchIdolsSuccess, fetchIdolsFailure } from '../actions/idols';
 import IdolsList from '../components/IndexPage';
 import { FETCH_IDOLS_SUCCESS } from '../actions/idols';
-import data from '../data/idols';
 
 const mapStateToProps = state => ({
   idolsList: state.idols.idolsList

@@ -2,7 +2,6 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from '../reducers';
 import promise from 'redux-promise';
 import { FETCH_IDOLS_SUCCESS } from '../actions/idols';
-import data from '../data/idols';
 
 // Middleware you want to use in production:
 const enhancer = applyMiddleware(promise);

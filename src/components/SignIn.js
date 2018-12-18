@@ -1,17 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { Field, reduxForm } from 'redux-form';
-import { signInUser, signInUserSuccess, signInUserFailure } from '../actions/users';
 
-function SubmitTest(values, dispatch) {
+function Submit(values, signIn) {
   console.log(values);
-  return dispatch(signInUser(values)).then((response) => {
-    if (response.error) {
-      dispatch(signInUserFailure(response.payload.data));
-    }
-    sessionStorage.setItem('username', response.payload.data.username);
-    dispatch(signInUserSuccess(response.payload.data));
-  });
+  signIn(values);
 }
 const renderField = ({ input,label,type }) => (
   <div className="form-group">
@@ -24,11 +17,18 @@ class SignIn extends React.Component {
   render() {
     const {handleSubmit, submitting} = this.props;
     return (
-      <form onSubmit={handleSubmit(SubmitTest)}>
-        <Field name="username" type="text" component={renderField} label="Username" />
-        <Field name="password" type="password" component={renderField} label="Password" />
-        <button type="submit" disabled={ submitting }>Submit</button>
-      </form>
+      <div class="container">
+        <div class="row">
+          <h1 style="text-align: center">Sign Up</h1>
+          <div style="width: 30%; margin: 25px auto;">
+            <form onSubmit={handleSubmit((values) => {Submit(values, this.props.signIn);})}>
+              <Field name="username" type="text" component={renderField} label="Username" />
+              <Field name="password" type="password" component={renderField} label="Password" />
+              <button type="submit" disabled={ submitting }>Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
     );
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-export default class Layout extends React.Component {
+export default class Header extends React.Component {
   
   componentWillUnmount() {
     //Important! If your component is navigating based on some global state(from say componentWillReceiveProps)
@@ -9,7 +9,7 @@ export default class Layout extends React.Component {
      this.props.resetPage();
   }
 
-  componentDidMount() {
+  componentDidMount(){
     this.props.loadUserFromPage();
   }
   
@@ -17,7 +17,7 @@ export default class Layout extends React.Component {
     if(user) {
       return (
         <ul class="nav navbar-nav navbar-right">
-          <li><Link to={"/users/" + user.id}>Signed In As {user.username}</Link></li>
+          <li><Link to={"/users/" + user.userId}>Signed In As {user.username}</Link></li>
           <li><a role="button" href="#" onClick={this.props.signOut}>SignOut</a></li>
         </ul>
       );
@@ -35,26 +35,16 @@ export default class Layout extends React.Component {
     const { user } = this.props.member;
     
     return (
-      <div>
       <nav className="navbar navbar-default">
         <div className="container">
           <div className="navbar-header">
             <Link className="navbar-brand" to="/">BNK48APP</Link>
           </div>
-          <div className="navbar">
+          <div className="collapse navbar-collapse">
             {this.renderMemberNav(user)}
           </div>
         </div>
       </nav>
-      <div className="container">
-        {this.props.children}
-      </div>
-      <footer key="footer" className="footer">
-        <div className="container">
-          <p className="text-muted">&copy; BNK48APP 2018 | <Link to="/">Home</Link> | <Link to="/shareidol">Share your Idol</Link></p>
-        </div>
-      </footer>
-      </div>
     );
   }
 }
