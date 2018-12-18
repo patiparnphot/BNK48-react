@@ -16,14 +16,14 @@ export default class Header extends React.Component {
   renderMemberNav(user) {
     if(user) {
       return (
-        <ul class="nav navbar-nav navbar-right">
+        <ul className="nav navbar-nav navbar-right">
           <li><Link to={"/users/" + user.userId}>Signed In As {user.username}</Link></li>
           <li><a role="button" href="#" onClick={this.props.signOut}>SignOut</a></li>
         </ul>
       );
     }
     return (
-      <ul class="nav navbar-nav navbar-right">
+      <ul className="nav navbar-nav navbar-right">
         <li><Link to="/signin">SignIn</Link></li>
         <li><Link to="/signup">Signup</Link></li>
       </ul>

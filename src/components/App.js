@@ -6,7 +6,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <p>app dev verision 1.0.14</p>
+        <p>app dev verision 1.0.15</p>
         {this.props.children}
         <footer key="footer" className="footer">
             <div className="container">
