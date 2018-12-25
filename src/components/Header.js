@@ -21,13 +21,14 @@ export default class Header extends React.Component {
           <li><a role="button" href="#" onClick={this.props.signOut}>SignOut</a></li>
         </ul>
       );
+    } else {
+      return (
+        <ul className="nav navbar-nav navbar-right">
+          <li><Link to="/signin">SignIn</Link></li>
+          <li><Link to="/signup">Signup</Link></li>
+        </ul>
+      );
     }
-    return (
-      <ul className="nav navbar-nav navbar-right">
-        <li><Link to="/signin">SignIn</Link></li>
-        <li><Link to="/signup">Signup</Link></li>
-      </ul>
-    );
   }
   
   render() {

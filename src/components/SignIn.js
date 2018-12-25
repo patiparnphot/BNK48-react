@@ -17,18 +17,11 @@ class SignIn extends React.Component {
   render() {
     const {handleSubmit, submitting} = this.props;
     return (
-      <div class="container">
-        <div class="row">
-          <h1 style="text-align: center">Sign Up</h1>
-          <div style="width: 30%; margin: 25px auto;">
-            <form onSubmit={handleSubmit((values) => {Submit(values, this.props.signIn);})}>
-              <Field name="username" type="text" component={renderField} label="Username" />
-              <Field name="password" type="password" component={renderField} label="Password" />
-              <button type="submit" disabled={ submitting }>Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
+      <form onSubmit={handleSubmit((values) => {Submit(values, this.props.signIn);})}>
+        <Field name="username" type="text" component={renderField} label="Username" />
+        <Field name="password" type="password" component={renderField} label="Password" />
+        <button type="submit" disabled={ submitting }>Submit</button>
+      </form>
     );
   }
 }
